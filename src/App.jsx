@@ -293,10 +293,10 @@ function CashFlowCalc({ market }) {
 
 // ─── COMPARE TAB ─────────────────────────────────────────────────────────────
 
-function CompareTab({ setSelectedMarket, setActiveTab }) {
+function CompareTab({ setSelectedMarket, setActiveTab, compareData }) {
   const [axis, setAxis] = useState("roi");
   const [chartTab, setChartTab] = useState("bar");
-  const sorted = [...COMPARE_DATA].sort((a, b) => b[axis] - a[axis]);
+  const sorted = [...compareData].sort((a, b) => b[axis] - a[axis]);
 
   const axisLabel = { roi: "Est. ROI %", revenue: "Annual Revenue ($K)", occ: "Occupancy %" };
 
@@ -355,7 +355,7 @@ function CompareTab({ setSelectedMarket, setActiveTab }) {
             <div style={{ fontSize: "11px", color: "#64748b" }}>Normalized view across all 3 metrics (sorted by ROI). Revenue in $K, ROI and Occupancy in %. * = over $500K budget.</div>
           </div>
           <ResponsiveContainer width="100%" height={340}>
-            <LineChart data={[...COMPARE_DATA].sort((a, b) => b.roi - a.roi)} margin={{ top: 24, right: 20, left: 0, bottom: 48 }}>
+            <LineChart data={[...compareData].sort((a, b) => b.roi - a.roi)} margin={{ top: 24, right: 20, left: 0, bottom: 48 }}>
               <CartesianGrid strokeDasharray="3 3" stroke="rgba(255,255,255,0.04)" />
               <XAxis dataKey="name" tick={{ fill: "#64748b", fontSize: 10 }} axisLine={false} tickLine={false} angle={-38} textAnchor="end" interval={0} />
               <YAxis yAxisId="pct" tick={{ fill: "#64748b", fontSize: 10 }} axisLine={false} tickLine={false} domain={[0, 100]} tickFormatter={v => `${v}%`} width={38} />
@@ -385,7 +385,7 @@ function CompareTab({ setSelectedMarket, setActiveTab }) {
         <div style={{ display: "grid", gridTemplateColumns: "2fr 1.1fr 0.9fr 1fr 1fr 0.9fr 0.9fr", padding: "10px 16px", borderBottom: "1px solid rgba(255,255,255,0.08)", fontSize: "9px", color: "#475569", textTransform: "uppercase", letterSpacing: "0.08em" }}>
           <span>Market</span><span>Region</span><span>Med. Price</span><span>Revenue/yr</span><span>Occupancy</span><span>ROI</span><span>In Budget?</span>
         </div>
-        {[...COMPARE_DATA].sort((a, b) => b.roi - a.roi).map((m, i) => {
+        {[...compareData].sort((a, b) => b.roi - a.roi).map((m, i) => {
           const inB = m.price <= 500;
           const rc = regionColor[m.region];
           return (
@@ -421,12 +421,12 @@ function CompareTab({ setSelectedMarket, setActiveTab }) {
 
 // ─── LISTINGS TAB ────────────────────────────────────────────────────────────
 
-function ListingsTab({ setSelectedMkt, setTab }) {
+function ListingsTab({ setSelectedMkt, setTab, allListings, markets }) {
   const [fReg, setFReg] = useState("all");
   const [fBeds, setFBeds] = useState("all");
   const [sort, setSort] = useState("cashflow");
 
-  const filtered = ALL_LISTINGS
+  const filtered = allListings
     .filter(l => fReg === "all" || l.region === fReg)
     .filter(l => fBeds === "all" || l.beds >= Number(fBeds))
     .sort((a, b) => sort === "price" ? a.price - b.price : sort === "revenue" ? b.estRevenue - a.estRevenue : sort === "newest" ? new Date(b.dateAdded) - new Date(a.dateAdded) : listingCF(b) - listingCF(a));
@@ -484,7 +484,7 @@ function ListingsTab({ setSelectedMkt, setTab }) {
                   {Object.entries(l.links).map(([site, url]) => (
                     <a key={site} href={url} target="_blank" rel="noopener noreferrer" style={{ fontSize: "11px", fontWeight: "600", color: rc, textDecoration: "none", padding: "4px 10px", borderRadius: "6px", border: `1px solid ${rc}44`, background: rc + "11" }}>{site} ↗</a>
                   ))}
-                  <button onClick={() => { const m = MARKETS.find(mk => mk.name === l.market); if (m) { setSelectedMkt({ ...m, medianPrice: l.price, annualRevenue: l.estRevenue }); setTab("calculator"); } }}
+                  <button onClick={() => { const m = markets.find(mk => mk.name === l.market); if (m) { setSelectedMkt({ ...m, medianPrice: l.price, annualRevenue: l.estRevenue }); setTab("calculator"); } }}
                     style={{ fontSize: "11px", fontWeight: "600", color: "#0a0f1e", background: rc, border: "none", borderRadius: "6px", padding: "4px 10px", cursor: "pointer" }}>Run Calculator →</button>
                 </div>
               </div>
@@ -612,7 +612,7 @@ export default function App() {
       <div style={{ maxWidth: "1160px", margin: "0 auto", padding: "24px" }}>
 
         {/* ── COMPARE ── */}
-        {tab === "compare" && <CompareTab setSelectedMarket={setSelectedMkt} setActiveTab={setTab} />}
+        {tab === "compare" && <CompareTab setSelectedMarket={setSelectedMkt} setActiveTab={setTab} compareData={COMPARE_DATA} />}
 
         {/* ── MARKETS ── */}
         {tab === "markets" && (
@@ -696,7 +696,7 @@ export default function App() {
         )}
 
         {/* ── LISTINGS ── */}
-        {tab === "listings" && <ListingsTab setSelectedMkt={setSelectedMkt} setTab={setTab} />}
+        {tab === "listings" && <ListingsTab setSelectedMkt={setSelectedMkt} setTab={setTab} allListings={ALL_LISTINGS} markets={MARKETS} />}
 
         {/* ── SEASONALITY ── */}
         {tab === "seasonality" && (
