@@ -1,280 +1,30 @@
 {
   "meta": {
-    "fetchedAt": "2026-03-10T03:47:13.311819Z",
-    "listingCount": 0,
-    "marketCount": 11
+    "fetchedAt": "2026-03-09T00:00:00Z",
+    "listingCount": 7,
+    "marketCount": 11,
+    "note": "Seed data — replaced by GitHub Actions scraper daily"
   },
   "markets": [
-    {
-      "id": "white-haven",
-      "name": "White Haven",
-      "region": "poconos",
-      "type": "Cabin / Mountain",
-      "adr": 241,
-      "occupancy": 0.67,
-      "annualRevenue": 41000,
-      "medianPrice": 208000,
-      "roiPct": 15,
-      "driveFromPhilly": "2 hrs",
-      "color": "#f59e0b",
-      "tag": "\ud83d\udd25 Best Cash Flow",
-      "notes": "Highest occupancy in region (67%). Near Lehigh Gorge State Park & Jack Frost/Split Rock ski.",
-      "pros": [
-        "~15% STR ROI \u2014 best in region",
-        "Lowest prices ($150\u2013$250K range)",
-        "67% avg occupancy (highest regional)",
-        "Light regulation \u2014 $350/yr STR fee"
-      ],
-      "cons": [
-        "Lower ADR ($241) vs beach/lake",
-        "Must notify municipality 1 wk before guest arrival",
-        "Less name recognition than Lake Harmony"
-      ]
-    },
-    {
-      "id": "locust-lake",
-      "name": "Locust Lake Village",
-      "region": "poconos",
-      "type": "Lakefront + Cabin",
-      "adr": 300,
-      "occupancy": 0.45,
-      "annualRevenue": 49000,
-      "medianPrice": 295000,
-      "roiPct": 8,
-      "driveFromPhilly": "2 hrs",
-      "color": "#fb923c",
-      "tag": "\ud83c\udfaf Budget Fit",
-      "notes": "Golf carts & ATVs allowed. HOA rental license $700/yr. Tobyhanna Twp lifted STR cap Mar 2025.",
-      "pros": [
-        "Fits budget comfortably",
-        "Golf carts/ATVs = guest appeal",
-        "Lake access",
-        "STR cap lifted"
-      ],
-      "cons": [
-        "Lowest ADR of Poconos group",
-        "HOA approval required",
-        "Older home stock may need updates"
-      ]
-    },
-    {
-      "id": "arrowhead",
-      "name": "Arrowhead Lake",
-      "region": "poconos",
-      "type": "Lakefront + Cabin",
-      "adr": 310,
-      "occupancy": 0.46,
-      "annualRevenue": 52000,
-      "medianPrice": 320000,
-      "roiPct": 7,
-      "driveFromPhilly": "2 hrs",
-      "color": "#34d399",
-      "tag": "\ud83c\udfca Amenity-Rich",
-      "notes": "Gated community with pools, beaches, tennis, trails. Tobyhanna Twp (cap lifted). HOA $700/yr.",
-      "pros": [
-        "Resort-like amenities",
-        "STR cap lifted",
-        "Budget-friendly",
-        "Year-round draw"
-      ],
-      "cons": [
-        "Strong seasonality",
-        "HOA wristband program complexity",
-        "Higher HOA fees"
-      ]
-    },
-    {
-      "id": "tannersville",
-      "name": "Tannersville / Camelback",
-      "region": "poconos",
-      "type": "Ski-Area",
-      "adr": 329,
-      "occupancy": 0.48,
-      "annualRevenue": 58000,
-      "medianPrice": 340000,
-      "roiPct": 7,
-      "driveFromPhilly": "1.5 hrs",
-      "color": "#a78bfa",
-      "tag": "\ud83d\udcb0 Best Value",
-      "notes": "Closest Poconos market to Philly (1.5 hrs). Near Camelback Mountain. Must verify HOA.",
-      "pros": [
-        "Closest Poconos market to Philly",
-        "Camelback = year-round demand",
-        "In budget range"
-      ],
-      "cons": [
-        "Some HOAs restrict STR",
-        "More resort competition",
-        "Lower ADR than Lake Harmony"
-      ]
-    },
-    {
-      "id": "jim-thorpe",
-      "name": "Jim Thorpe",
-      "region": "poconos",
-      "type": "Historic / Cabin",
-      "adr": 253,
-      "occupancy": 0.54,
-      "annualRevenue": 45000,
-      "medianPrice": 336000,
-      "roiPct": 6,
-      "driveFromPhilly": "1.75 hrs",
-      "color": "#64748b",
-      "tag": "\u26a0\ufe0f Zoning Risk",
-      "notes": "2021 ordinance restricts NEW STRs to C1/C2/C3/R4 zones only. Must verify zoning before purchase.",
-      "pros": [
-        "Low competition",
-        "Victorian charm",
-        "1.75 hrs from Philly"
-      ],
-      "cons": [
-        "STR restricted to select zones ONLY",
-        "Must verify zoning before purchase",
-        "5% local occ tax + 6% PA hotel tax"
-      ]
-    },
-    {
-      "id": "lake-harmony",
-      "name": "Lake Harmony",
-      "region": "poconos",
-      "type": "Lakefront + Ski",
-      "adr": 418,
-      "occupancy": 0.52,
-      "annualRevenue": 79000,
-      "medianPrice": 460000,
-      "roiPct": 6,
-      "driveFromPhilly": "2 hrs",
-      "color": "#22d3ee",
-      "tag": "\ud83c\udfc6 Premium Pick",
-      "notes": "Top Poconos market. Highest ADR ($418). STR license $500/yr. Thin cash flow at current prices.",
-      "pros": [
-        "Year-round demand (ski + lake)",
-        "Highest ADR in region ($418)",
-        "STR regulations very clear"
-      ],
-      "cons": [
-        "Prices $400\u2013$500K+ = thin cash flow",
-        "Most competitive STR market"
-      ]
-    },
-    {
-      "id": "milton-de",
-      "name": "Milton, DE",
-      "region": "delaware",
-      "type": "Coastal / Inland Beach",
-      "adr": 270,
-      "occupancy": 0.58,
-      "annualRevenue": 32000,
-      "medianPrice": 401000,
-      "roiPct": 8,
-      "driveFromPhilly": "2.5 hrs",
-      "color": "#34d399",
-      "tag": "\ud83c\udfc6 DE Best Value",
-      "notes": "15 min from Rehoboth Beach. Only 40 active STRs = very low competition. No DE state sales tax.",
-      "pros": [
-        "8% ROI at $401K median",
-        "Only 40 active STRs",
-        "No DE state sales tax"
-      ],
-      "cons": [
-        "Not beachfront",
-        "Very strong summer seasonality",
-        "Less established STR market"
-      ]
-    },
-    {
-      "id": "ocean-view-de",
-      "name": "Ocean View / Millville, DE",
-      "region": "delaware",
-      "type": "Near-Beach Coastal",
-      "adr": 290,
-      "occupancy": 0.5,
-      "annualRevenue": 28000,
-      "medianPrice": 380000,
-      "roiPct": 7,
-      "driveFromPhilly": "2.5 hrs",
-      "color": "#06b6d4",
-      "tag": "\ud83c\udf0a Budget Beach",
-      "notes": "5-min drive to Bethany Beach. Lighter regulation than incorporated beach towns.",
-      "pros": [
-        "5 min to Bethany Beach",
-        "Lighter regulation",
-        "Same drive market as Rehoboth"
-      ],
-      "cons": [
-        "Lower ADR than beachfront",
-        "Heavy summer concentration"
-      ]
-    },
-    {
-      "id": "rehoboth",
-      "name": "Rehoboth Beach, DE",
-      "region": "delaware",
-      "type": "Beachfront (Over Budget)",
-      "adr": 374,
-      "occupancy": 0.56,
-      "annualRevenue": 78000,
-      "medianPrice": 1960000,
-      "roiPct": 2,
-      "driveFromPhilly": "2.5 hrs",
-      "color": "#475569",
-      "tag": "\ud83d\udccb Reference Only",
-      "notes": "Over budget at $1.96M median. 2% ROI. Reference benchmark only.",
-      "pros": [
-        "$78K avg revenue",
-        "Massive drive market"
-      ],
-      "cons": [
-        "Median $1.96M \u2014 4x over budget",
-        "~2% ROI"
-      ]
-    },
-    {
-      "id": "ocean-city-nj",
-      "name": "Ocean City, NJ",
-      "region": "nj",
-      "type": "Beachfront (Over Budget)",
-      "adr": 272,
-      "occupancy": 0.55,
-      "annualRevenue": 55000,
-      "medianPrice": 1262500,
-      "roiPct": 3,
-      "driveFromPhilly": "1.5 hrs",
-      "color": "#475569",
-      "tag": "\ud83d\udccb Reference Only",
-      "notes": "Over budget. $1.26M median. Appreciation play only.",
-      "pros": [
-        "$55K revenue",
-        "Closest NJ Shore to Philly"
-      ],
-      "cons": [
-        "$1.26M median",
-        "~3% ROI"
-      ]
-    },
-    {
-      "id": "cape-may-nj",
-      "name": "Cape May, NJ",
-      "region": "nj",
-      "type": "Beachfront (Over Budget)",
-      "adr": 378,
-      "occupancy": 0.59,
-      "annualRevenue": 75000,
-      "medianPrice": 915000,
-      "roiPct": 2,
-      "driveFromPhilly": "1.75 hrs",
-      "color": "#475569",
-      "tag": "\ud83d\udccb Reference Only",
-      "notes": "Best STR metrics on NJ Shore but $915K median. Doesn't pencil at budget.",
-      "pros": [
-        "$75K revenue",
-        "59% occupancy"
-      ],
-      "cons": [
-        "$915K median",
-        "~2% ROI"
-      ]
-    }
+    {"id":"white-haven","name":"White Haven","region":"poconos","type":"Cabin / Mountain","adr":241,"occupancy":0.67,"annualRevenue":41000,"medianPrice":208000,"roiPct":15,"driveFromPhilly":"2 hrs","color":"#f59e0b","tag":"🔥 Best Cash Flow","notes":"Highest occupancy in region (67%). Near Lehigh Gorge State Park & Jack Frost/Split Rock ski.","pros":["~15% STR ROI — best in region","Lowest prices ($150–$250K range)","67% avg occupancy (highest regional)","Light regulation — $350/yr STR fee"],"cons":["Lower ADR ($241) vs beach/lake","Must notify municipality 1 wk before guest arrival","Less name recognition than Lake Harmony"]},
+    {"id":"locust-lake","name":"Locust Lake Village","region":"poconos","type":"Lakefront + Cabin","adr":300,"occupancy":0.45,"annualRevenue":49000,"medianPrice":295000,"roiPct":8,"driveFromPhilly":"2 hrs","color":"#fb923c","tag":"🎯 Budget Fit","notes":"Golf carts & ATVs allowed. HOA rental license $700/yr. STR cap lifted Mar 2025.","pros":["Fits budget comfortably","Golf carts/ATVs = guest appeal","Lake access","STR cap lifted"],"cons":["Lowest ADR of Poconos group","HOA approval required","Older home stock"]},
+    {"id":"arrowhead","name":"Arrowhead Lake","region":"poconos","type":"Lakefront + Cabin","adr":310,"occupancy":0.46,"annualRevenue":52000,"medianPrice":320000,"roiPct":7,"driveFromPhilly":"2 hrs","color":"#34d399","tag":"🏊 Amenity-Rich","notes":"Gated community with pools, beaches, tennis, trails.","pros":["Resort-like amenities","STR cap lifted","Budget-friendly","Year-round draw"],"cons":["Strong seasonality","HOA wristband program complexity","Higher HOA fees"]},
+    {"id":"tannersville","name":"Tannersville / Camelback","region":"poconos","type":"Ski-Area","adr":329,"occupancy":0.48,"annualRevenue":58000,"medianPrice":340000,"roiPct":7,"driveFromPhilly":"1.5 hrs","color":"#a78bfa","tag":"💰 Best Value","notes":"Closest Poconos market to Philly. Near Camelback Mountain. Must verify HOA.","pros":["Closest Poconos market to Philly","Camelback = year-round demand","In budget range"],"cons":["Some HOAs restrict STR","More resort competition"]},
+    {"id":"jim-thorpe","name":"Jim Thorpe","region":"poconos","type":"Historic / Cabin","adr":253,"occupancy":0.54,"annualRevenue":45000,"medianPrice":336000,"roiPct":6,"driveFromPhilly":"1.75 hrs","color":"#64748b","tag":"⚠️ Zoning Risk","notes":"2021 ordinance restricts NEW STRs to specific zones. Must verify zoning before purchase.","pros":["Low competition","Victorian charm","1.75 hrs from Philly"],"cons":["STR restricted to select zones ONLY","Must verify zoning before purchase","5% local occ tax + 6% PA hotel tax"]},
+    {"id":"lake-harmony","name":"Lake Harmony","region":"poconos","type":"Lakefront + Ski","adr":418,"occupancy":0.52,"annualRevenue":79000,"medianPrice":460000,"roiPct":6,"driveFromPhilly":"2 hrs","color":"#22d3ee","tag":"🏆 Premium Pick","notes":"Top Poconos market. Highest ADR ($418). STR license $500/yr. Thin cash flow at current prices.","pros":["Year-round demand (ski + lake)","Highest ADR in region ($418)","STR regulations very clear"],"cons":["Prices $400–$500K+ = thin cash flow","Most competitive STR market"]},
+    {"id":"milton-de","name":"Milton, DE","region":"delaware","type":"Coastal / Inland Beach","adr":270,"occupancy":0.58,"annualRevenue":32000,"medianPrice":401000,"roiPct":8,"driveFromPhilly":"2.5 hrs","color":"#34d399","tag":"🏆 DE Best Value","notes":"15 min from Rehoboth Beach. Only 40 active STRs. No DE state sales tax.","pros":["8% ROI at $401K median","Only 40 active STRs","No DE state sales tax"],"cons":["Not beachfront","Very strong summer seasonality"]},
+    {"id":"ocean-view-de","name":"Ocean View / Millville, DE","region":"delaware","type":"Near-Beach Coastal","adr":290,"occupancy":0.50,"annualRevenue":28000,"medianPrice":380000,"roiPct":7,"driveFromPhilly":"2.5 hrs","color":"#06b6d4","tag":"🌊 Budget Beach","notes":"5-min drive to Bethany Beach. Lighter regulation than incorporated beach towns.","pros":["5 min to Bethany Beach","Lighter regulation","Same drive market as Rehoboth"],"cons":["Lower ADR than beachfront","Heavy summer concentration"]},
+    {"id":"rehoboth","name":"Rehoboth Beach, DE","region":"delaware","type":"Beachfront (Over Budget)","adr":374,"occupancy":0.56,"annualRevenue":78000,"medianPrice":1960000,"roiPct":2,"driveFromPhilly":"2.5 hrs","color":"#475569","tag":"📋 Reference Only","notes":"Over budget at $1.96M median. 2% ROI. Reference benchmark only.","pros":["$78K avg revenue","Massive drive market"],"cons":["Median $1.96M — 4x over budget","~2% ROI"]},
+    {"id":"ocean-city-nj","name":"Ocean City, NJ","region":"nj","type":"Beachfront (Over Budget)","adr":272,"occupancy":0.55,"annualRevenue":55000,"medianPrice":1262500,"roiPct":3,"driveFromPhilly":"1.5 hrs","color":"#475569","tag":"📋 Reference Only","notes":"Over budget. $1.26M median. Appreciation play only.","pros":["$55K revenue","Closest NJ Shore to Philly"],"cons":["$1.26M median","~3% ROI"]},
+    {"id":"cape-may-nj","name":"Cape May, NJ","region":"nj","type":"Beachfront (Over Budget)","adr":378,"occupancy":0.59,"annualRevenue":75000,"medianPrice":915000,"roiPct":2,"driveFromPhilly":"1.75 hrs","color":"#475569","tag":"📋 Reference Only","notes":"Best STR metrics on NJ Shore but $915K median.","pros":["$75K revenue","59% occupancy"],"cons":["$915K median","~2% ROI"]}
   ],
-  "listings": []
+  "listings": [
+    {"id":1,"market":"Lake Harmony","region":"poconos","address":"15 Skye Dr","city":"Lake Harmony, PA 18624","price":485000,"beds":4,"baths":2.5,"sqft":1856,"dateFetched":"2026-03-09","daysOnMarket":4,"estRevenue":79000,"amenities":["Hot Tub","Lake Access","Fireplace","Furnished"],"description":"4-season getaway in Lake Harmony Estates. Private hot tub, private beach access. Turnkey STR-ready.","links":{"Zillow":"https://www.zillow.com/homes/15-Skye-Dr-Lake-Harmony-PA-18624_rb/","Redfin":"https://www.redfin.com/PA/Lake-Harmony/15-Skye-Dr-18624"}},
+    {"id":2,"market":"Lake Harmony","region":"poconos","address":"11 Maplewood Rd","city":"Lake Harmony, PA 18624","price":489000,"beds":3,"baths":2,"sqft":1640,"dateFetched":"2026-03-01","daysOnMarket":8,"estRevenue":72000,"amenities":["Lake Access","Fireplace","Renovated","Loft"],"description":"Steps to lake with fresh modern reno. Loft adds sleeping capacity. STR-ready.","links":{"Zillow":"https://www.zillow.com/homes/11-Maplewood-Rd-Lake-Harmony-PA-18624_rb/","Redfin":"https://www.redfin.com/PA/Lake-Harmony/11-Maplewood-Rd-18624"}},
+    {"id":3,"market":"Lake Harmony","region":"poconos","address":"119 Downhill Dr","city":"Lake Harmony, PA 18624","price":222000,"beds":2,"baths":1.5,"sqft":1025,"dateFetched":"2026-03-07","daysOnMarket":2,"estRevenue":38000,"amenities":["Ski Access","Furnished"],"description":"Fully furnished 2BR near Jack Frost Mountain. Well under budget. Add hot tub to boost revenue.","links":{"Zillow":"https://www.zillow.com/homes/119-Downhill-Lake-Harmony-PA-18624_rb/","Redfin":"https://www.redfin.com/PA/Lake-Harmony/119-Downhill-18624"}},
+    {"id":4,"market":"White Haven","region":"poconos","address":"Lehigh Gorge Cabin Area","city":"White Haven, PA 18661","price":210000,"beds":3,"baths":2,"sqft":1400,"dateFetched":"2026-03-09","daysOnMarket":0,"estRevenue":41000,"amenities":["Hot Tub","Fireplace","Near Lehigh Gorge","Pet Friendly","Game Room"],"description":"3BR cabin near Lehigh Gorge State Park. Best cash flow in the region — 67% avg occupancy, ~15% STR ROI. Annual STR fee just $350.","links":{"Zillow":"https://www.zillow.com/white-haven-pa/","Redfin":"https://www.redfin.com/city/19440/PA/White-Haven"}},
+    {"id":5,"market":"Milton, DE","region":"delaware","address":"Cannery Village Townhome","city":"Milton, DE 19968","price":389000,"beds":3,"baths":2.5,"sqft":1900,"dateFetched":"2026-03-08","daysOnMarket":1,"estRevenue":32000,"amenities":["Community Pool","No STR Restrictions","Near Dogfish Head Brewery"],"description":"3BR in Cannery Village. No STR restrictions. 10 min to Rehoboth. Very low competition market (only 40 active STRs in Milton).","links":{"Zillow":"https://www.zillow.com/milton-de/","Redfin":"https://www.redfin.com/city/12350/DE/Milton"}},
+    {"id":6,"market":"Milton, DE","region":"delaware","address":"Broadkill Beach Retreat","city":"Broadkill Beach / Milton, DE 19968","price":425000,"beds":3,"baths":2.5,"sqft":1800,"dateFetched":"2026-03-08","daysOnMarket":1,"estRevenue":42000,"amenities":["Delaware Bay Views","Active STR ($350/night)","Dual-Unit Layout"],"description":"Actively operating STR at $350/night per unit. Bay views, dual-unit flexibility. Turnkey income property.","links":{"Zillow":"https://www.zillow.com/milton-de/","Redfin":"https://www.redfin.com/city/12350/DE/Milton"}},
+    {"id":7,"market":"Ocean View / Millville, DE","region":"delaware","address":"Vines of Sandhill Community","city":"Millville, DE 19967","price":368000,"beds":3,"baths":2,"sqft":1700,"dateFetched":"2026-03-09","daysOnMarket":0,"estRevenue":28000,"amenities":["Community Pool","Pickleball Courts","5 min to Bethany Beach","Lawn Care Included"],"description":"Move-in ready 3BR in resort-style community. 5-min drive to Bethany Beach. No STR restrictions.","links":{"Zillow":"https://www.zillow.com/millville-de/","Redfin":"https://www.redfin.com/city/26938/DE/Millville"}}
+  ]
 }
